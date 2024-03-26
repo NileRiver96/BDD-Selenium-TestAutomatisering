@@ -10,17 +10,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 
 import static org.junit.Assert.assertEquals;
 
 public class MyStepdefsreg {
     private WebDriver driver;
-    private WebDriver driverr;
+
 
 
 
@@ -98,12 +98,7 @@ public class MyStepdefsreg {
         waitForElementToBeClickable(confirmPass);
 
     }
-   // @When("I enter enter registration details {string}, {string}, {string}, {string}, and {string}")
-  //  public void iEnter(String firstName, String lastName, String email, String password, String confirmPassword) {
 
-
-
-  //  }
 
     @And("I accept the terms {string}")
     public void iAcceptTheTerms(String acceptsTerms) {
@@ -118,7 +113,7 @@ public class MyStepdefsreg {
                 noacceptAgeAndEthics();
                 break;
             default:
-                // Om inget matchar, gör ingenting
+
                 break;
         }
     }
